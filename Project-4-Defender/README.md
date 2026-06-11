@@ -1,59 +1,42 @@
 
-# Project 4: Microsoft Defender for Cloud
-## Azure Cloud Security Portfolio
+# Project 4 — Microsoft Defender for Cloud
 
-## Objective
-Configure and explore Microsoft Defender for Cloud to monitor the security
-posture of Azure resources, set up security alerts, and understand
-security recommendations.
+## Overview
 
-## Skills Learned
-- Security posture management with Defender for Cloud
-- Defender plans configuration (free vs paid tiers)
-- Email notification setup for security alerts
-- Understanding Secure Score and security recommendations
-- Cloud Security Posture Management (CSPM) concepts
+Before you can respond to threats, you need visibility. This project is about setting up Microsoft Defender for Cloud to get a clear picture of the security posture across the Azure environment — what's exposed, what's misconfigured, and what needs attention.
 
-## Tools Used
+## What I used
+
 - Microsoft Defender for Cloud
 - Azure Subscription (Free Trial)
-- Foundational CSPM (Free tier)
+- Foundational CSPM (free tier)
 
-## Steps
+## What I did
 
-### 1. Accessed Defender for Cloud Overview
-Explored the main dashboard showing:
-- Azure subscriptions monitored: 1
-- Security posture status
-- Attack paths analysis
-- Security alerts panel
+### Explored the main dashboard
 
-### 2. Reviewed Defender Plans
-Verified all paid Defender plans are Off to avoid charges:
-- Foundational CSPM: Free ✅
-- Defender CSPM: Off (paid)
-- Servers: Off (paid)
-- App Service: Off (paid)
-- Databases: Off (paid)
-- Storage: Off (paid)
+The Defender for Cloud overview gives you a consolidated view of everything: subscriptions being monitored, current security posture, attack path analysis, and active alerts. Getting familiar with this dashboard is important — in a SOC environment, this is one of the first places you'd look when assessing an Azure tenant.
 
-### 3. Configured Email Notifications
-Set up security alert notifications:
-- Role: Owner
-- Email: wilberthveme@gmail.com
-- Notification type: High severity alerts and above
+### Reviewed Defender plans
 
-## Security Controls Implemented
-- Security posture monitoring enabled at no cost
-- Email alerts configured for High severity security events
-- All paid workload protection plans disabled to minimize attack surface
-- Foundational CSPM providing continuous security assessment
+One of the first things I checked was making sure no paid plans were accidentally enabled. Defender plans can rack up costs fast, and on a free trial you want to be deliberate about what's on.
 
-## Relation to SC-200 / SOC Analyst Role
-- Defender for Cloud is a primary tool used daily in SOC environments
-- Secure Score helps prioritize security improvements
-- Recommendations guide remediation of security misconfigurations
-- Alerts feed directly into Microsoft Sentinel (Project 5)
+- **Foundational CSPM:** Free ✅ — continuous security assessment at no cost
+- All paid workload protection plans (Servers, App Service, Databases, Storage, Defender CSPM): Off
 
-## Evidence
-See screenshots/ folder
+The free tier still gives you Secure Score and security recommendations, which is enough to demonstrate the core concepts.
+
+### Configured email notifications
+
+Set up alerts so that any high severity security event triggers an email notification. Small step, but in a real environment you'd never want these going unmonitored — silent alerts are as good as no alerts.
+
+- Severity threshold: High and above
+- Recipient: Owner role
+
+## Why this matters
+
+Defender for Cloud is a daily tool in SOC and cloud security roles. The Secure Score gives you a prioritized list of what to fix, recommendations guide the actual remediation work, and the alerts feed directly into Microsoft Sentinel — which is exactly what Project 5 builds on. Understanding how these two services connect is core to the SC-200 exam and to the SOC Analyst role in general.
+
+## Screenshots
+
+All screenshots are in the [screenshots](./screenshots) folder.
