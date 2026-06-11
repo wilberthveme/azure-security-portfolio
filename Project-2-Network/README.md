@@ -1,60 +1,54 @@
 
-# Project 2: Secure Network in Azure
-## Azure Cloud Security Portfolio
+# Project 2 — Secure Network Architecture in Azure
 
-## Objective
-Implement a secure network architecture in Azure using Virtual Networks, public and private subnets, and Network Security Groups (NSG) to control and restrict traffic following security best practices.
+## Overview
 
-## Skills Learned
-- Network segmentation
-- Virtual Network (VNet) configuration
-- Subnet design (public and private)
-- Network Security Groups (NSG)
-- Inbound and outbound traffic control
-- Least privilege applied to network access
+Before deploying anything in the cloud, you need to think about network boundaries. This project is about building a segmented network in Azure — separating public-facing resources from internal ones, and locking down traffic with NSG rules so nothing gets in unless it's supposed to.
 
-## Tools Used
+## What I used
+
 - Microsoft Azure
-- Azure Virtual Networks
+- Azure Virtual Networks (VNet)
 - Network Security Groups (NSG)
 
-## Steps
+## What I built
 
-### 1. Created Virtual Network
-Created a Virtual Network to host all lab resources:
-- **Name:** vnet-security-lab
-- **Resource Group:** rg-security-lab
+### Virtual Network
+
+Set up a VNet as the foundation for all lab resources:
+
+- **Name:** `vnet-security-lab`
+- **Resource Group:** `rg-security-lab`
 - **Region:** East US
-- **Address space:** 10.0.0.0/16 (65,536 addresses)
+- **Address space:** `10.0.0.0/16`
 
-### 2. Created Subnets
-Segmented the network into two subnets following security best practices:
+A /16 gives plenty of room to grow — important when you're planning a lab that will keep expanding.
 
-**Public Subnet:**
-- **Name:** subnet-public
-- **Address range:** 10.0.0.0/24 (256 addresses)
-- Accessible from the internet with controlled rules
+### Subnets
 
-**Private Subnet:**
-- **Name:** subnet-private
-- **Address range:** 10.0.1.0/24 (256 addresses)
-- No default outbound access (private subnet enabled)
+Split the network into two subnets with different exposure levels:
 
-### 3. Created Network Security Group
-Created an NSG to control traffic to the public subnet:
-- **Name:** nsg-security-lab
-- **Resource Group:** rg-security-lab
+**Public subnet** (`subnet-public` — `10.0.0.0/24`)
+Meant for resources that need internet-facing access. Not wide open — traffic is controlled through the NSG.
 
-### 4. Configured Inbound Security Rules
-Added custom rules following the Least Privilege principle:
+**Private subnet** (`subnet-private` — `10.0.1.0/24`)
+No default outbound access. Resources here can't reach the internet unless explicitly allowed, which is exactly the point.
 
-| Priority | Name | Port | Source | Action |
-|---|---|---|---|---|
+### Network Security Group
+
+Created `nsg-security-lab` and attached it to the public subnet. The NSG is what actually enforces the rules — without it, the subnet is just a label.
+
+### Inbound rules
+
+This is where least privilege shows up at the network level. Instead of leaving RDP open to the world (a very common misconfiguration), I restricted it to a single IP:
+
+| Priority | Rule | Port | Source | Action |
+|----------|------|------|--------|--------|
 | 100 | Allow-RDP-MyIP | 3389 | My IP only | Allow |
 | 200 | Deny-RDP-All | 3389 | Any | Deny |
 
-### 5. Associated NSG to Public Subnet
-Associated nsg-security-lab to subnet-public to enforce the security rules on all traffic entering and leaving the public subnet.
+Priority 100 runs first — my IP gets through. Everything else hits the deny rule at 200. Simple, but this alone blocks a massive amount of automated RDP scanning that happens constantly on public cloud IPs.
 
 ## Screenshots
-All screenshots are available in the [Screenshots](./Screenshots) folder.
+
+All screenshots are in the [Screenshots](./Screenshots) folder.
