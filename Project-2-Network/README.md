@@ -51,4 +51,16 @@ Priority 100 runs first — my IP gets through. Everything else hits the deny ru
 
 ## Screenshots
 
-All screenshots are in the [Screenshots](./Screenshots) folder.
+| File | What it shows |
+|------|---------------|
+| [00-virtual-networks-empty.png](./Screenshots/00-virtual-networks-empty.png) | Virtual Networks before setup |
+| [01-subnet-private-config.png](./Screenshots/01-subnet-private-config.png) | Private subnet configuration |
+| [02-subnets-created.png](./Screenshots/02-subnets-created.png) | Both subnets created |
+| [03-vnet-review.png](./Screenshots/03-vnet-review.png) | VNet review before deployment |
+| [04-vnet-created.png](./Screenshots/04-vnet-created.png) | VNet successfully created |
+| [06-nsg-created.png](./Screenshots/06-nsg-created.png) | NSG created |
+| [07-nsg-default-rules.png](./Screenshots/07-nsg-default-rules.png) | Default inbound rules before customization |
+| [08-nsg-rdp-rule.png](./Screenshots/08-nsg-rdp-rule.png) | RDP rule configuration |
+| [09-nsg-rdp-rule-created.png](./Screenshots/09-nsg-rdp-rule-created.png) | RDP rule created |
+| [10-nsg-rules-created.png](./Screenshots/10-nsg-rules-created.png) | All NSG rules in place |
+| [11-nsg-associated-subnet.png](./Screenshots/11-nsg-associated-subnet.png) | NSG associated to public subnet |
