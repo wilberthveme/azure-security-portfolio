@@ -42,4 +42,13 @@ Exposed SSH and RDP ports are consistently among the top sources of cloud compro
 
 ## Screenshots
 
-All screenshots are in the [Screenshots](./Screenshots) folder.
+| File | What it shows |
+|------|---------------|
+| [01-bastion-subnet-created.png](./Screenshots/01-bastion-subnet-created.png) | AzureBastionSubnet created inside the VNet |
+| [02-bastion-resource-created.png](./Screenshots/02-bastion-resource-created.png) | Bastion resource successfully deployed |
+| [03-bastion-public-ip.png](./Screenshots/03-bastion-public-ip.png) | Public IP assigned to Bastion |
+| [04-vm-created-no-public-ip.png](./Screenshots/04-vm-created-no-public-ip.png) | VM created with no public IP |
+| [05-vm-no-public-ip.png](./Screenshots/05-vm-no-public-ip.png) | Confirmation that the VM has no public IP |
+| [06-bastion-session-active.png](./Screenshots/06-bastion-session-active.png) | Active browser session into the VM via Bastion |
+| [07-bastion-session-hostname.png](./Screenshots/07-bastion-session-hostname.png) | Hostname verified from inside the VM |
+| [08-bastion-deleted.png](./Screenshots/08-bastion-deleted.png) | Bastion deleted after lab to save credits |
