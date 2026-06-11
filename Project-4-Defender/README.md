@@ -39,4 +39,8 @@ Defender for Cloud is a daily tool in SOC and cloud security roles. The Secure S
 
 ## Screenshots
 
-All screenshots are in the [screenshots](./screenshots) folder.
+| File | What it shows |
+|------|---------------|
+| [01-defender-overview.png](./Screenshots/01-defender-overview.png) | Defender for Cloud main dashboard |
+| [02-defender-plans-off.png](./Screenshots/02-defender-plans-off.png) | All paid Defender plans disabled |
+| [03-defender-email-notifications.png](./Screenshots/03-defender-email-notifications.png) | Email notifications configured for high severity alerts |
