@@ -59,18 +59,18 @@ Like dynamic groups, Conditional Access policies require P1. In practice, you'd 
 
 | File | What it shows |
 |------|---------------|
-| [00-entra-id-overview.png](./Screenshots/00-entra-id-overview.png) | Microsoft Entra ID overview |
-| [01-users-empty.png](./Screenshots/01-users-empty.png) | Users list before setup |
-| [02-admin-company-created.png](./Screenshots/02-admin-company-created.png) | admin.company user created |
-| [03-analyst-company-created.png](./Screenshots/03-analyst-company-created.png) | analyst.company user created |
-| [04-guest-company-created.png](./Screenshots/04-guest-company-created.png) | guest.company user created |
-| [05-groups-empty.png](./Screenshots/05-groups-empty.png) | Groups list before setup |
-| [06-administrators-group-config.png](./Screenshots/06-administrators-group-config.png) | Administrators group configuration |
-| [07-administrators-group-created.png](./Screenshots/07-administrators-group-created.png) | Administrators group created |
-| [08-analysts-group-created.png](./Screenshots/08-analysts-group-created.png) | Analysts group created |
-| [09-dynamic-group-license-required.png](./Screenshots/09-dynamic-group-license-required.png) | Dynamic group license requirement |
-| [10-mfa-disabled.png](./Screenshots/10-mfa-disabled.png) | MFA state before configuration |
-| [11-mfa-enabled.png](./Screenshots/11-mfa-enabled.png) | MFA enabled for admin and analyst |
-| [12-iam-access-control.png](./Screenshots/12-iam-access-control.png) | IAM Access Control page |
-| [13-role-assignments.png](./Screenshots/13-role-assignments.png) | Role assignments configured |
-| [14-role-assignments-complete.png](./Screenshots/14-role-assignments-complete.png) | Final role assignments overview |
+| [00-entra-id-overview.png](./screenshots/00-entra-id-overview.png) | Microsoft Entra ID overview |
+| [01-users-empty.png](./screenshots/01-users-empty.png) | Users list before setup |
+| [02-admin-company-created.png](./screenshots/02-admin-company-created.png) | admin.company user created |
+| [03-analyst-company-created.png](./screenshots/03-analyst-company-created.png) | analyst.company user created |
+| [04-guest-company-created.png](./screenshots/04-guest-company-created.png) | guest.company user created |
+| [05-groups-empty.png](./screenshots/05-groups-empty.png) | Groups list before setup |
+| [06-administrators-group-config.png](./screenshots/06-administrators-group-config.png) | Administrators group configuration |
+| [07-administrators-group-created.png](./screenshots/07-administrators-group-created.png) | Administrators group created |
+| [08-analysts-group-created.png](./screenshots/08-analysts-group-created.png) | Analysts group created |
+| [09-dynamic-group-license-required.png](./screenshots/09-dynamic-group-license-required.png) | Dynamic group license requirement |
+| [10-mfa-disabled.png](./screenshots/10-mfa-disabled.png) | MFA state before configuration |
+| [11-mfa-enabled.png](./screenshots/11-mfa-enabled.png) | MFA enabled for admin and analyst |
+| [12-iam-access-control.png](./screenshots/12-iam-access-control.png) | IAM Access Control page |
+| [13-role-assignments.png](./screenshots/13-role-assignments.png) | Role assignments configured |
+| [14-role-assignments-complete.png](./screenshots/14-role-assignments-complete.png) | Final role assignments overview |
