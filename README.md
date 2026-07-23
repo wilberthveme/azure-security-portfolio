@@ -87,4 +87,4 @@ Upcoming projects include:
 - LinkedIn: [linkedin.com/in/wilbert-vega-mendoza](https://www.linkedin.com/in/wilbert-vega-mendoza-82380514a/)
 - GitHub: [github.com/wilberthveme](https://github.com/wilberthveme)
 - Email: [wilberthveme@gmail.com](mailto:wilberthveme@gmail.com)
-Proyectos prácticos de cloud security en Azure
+
